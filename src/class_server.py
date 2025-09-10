@@ -18,7 +18,7 @@ class Server(BaseHTTPRequestHandler):
         # parsed_data = urllib.parse.parse_qs(post_data.decode("utf-8"))
         print(post_data)
         self.send_response(200)
-        # self.send_header("Content-type", "text/html")
+        self.send_header("Content-type", "text/html; charset=utf-8")
         self.end_headers()
 
     def read_html(self):
