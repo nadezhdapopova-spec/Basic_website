@@ -7,17 +7,31 @@
       background-color: #000000;
       padding-top: 20px;
     }
-    .sidebar .nav-link {
+
+.sidebar h3 {
+      color: white;
+    }
+
+.sidebar .nav-link {
       font-size: 1.2rem;
       border-radius: 15px;
       padding: 15px;
       color: white;
     }
-    .sidebar .nav-link.active {
+
+.sidebar .nav-link.active {
       background-color: #007bff;
       color: white;
     }
 
 .main-content {
-      margin-left: 250px;
+      margin-left: 240px;
+    }
+
+.custom-text {
+      color: #6c757d;
+    }
+
+.custom-row {
+      gap: 80px;
     }
