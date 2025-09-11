@@ -1,5 +1,13 @@
+.body {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "sidebar main"
+    }
+
 .sidebar {
-      height: 100vh;
+      min-height: 100vh;
       width: 250px;
       position: fixed;
       top: 0;
@@ -25,13 +33,18 @@
     }
 
 .main-content {
-      margin-left: 240px;
+      margin-left: 250px;
+      max-width: calc(100% - 250px);
     }
 
 .custom-text {
       color: #6c757d;
     }
 
-.custom-row {
+.custom-row-80 {
       gap: 80px;
+    }
+
+.custom-row-50 {
+      gap: 50px;
     }
