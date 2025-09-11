@@ -23,7 +23,7 @@ class Server(BaseHTTPRequestHandler):
 
     def read_html(self):
         try:
-            with open("dist/contacts.html", "r", encoding="utf-8") as file:
+            with open("dist/page_contacts.html", "r", encoding="utf-8") as file:
                 content = file.read()
             self.wfile.write(bytes(content, "utf-8"))
         except FileNotFoundError:

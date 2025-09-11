@@ -48,3 +48,9 @@
 .custom-row-50 {
       gap: 50px;
     }
+
+.btn.btn-primary.dropdown-toggle {
+      color: white;
+      background-color: #000000;
+      border: 0
+}
