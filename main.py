@@ -1,13 +1,15 @@
 import os
 from http.server import HTTPServer
-from src.class_server import Server
 
 from dotenv import load_dotenv
+
+from src.class_server import Server
 
 load_dotenv()
 
 
-def main():
+def main() -> None:
+    """Инициализация, запуск и остановка веб-сервера"""
     host_name = os.getenv("HOST_NAME", "127.0.0.1")
     server_port = int(os.getenv("SERVER_PORT", 8080))
     web_server = HTTPServer((host_name, server_port), Server)

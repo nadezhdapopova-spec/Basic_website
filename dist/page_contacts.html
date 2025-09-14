@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="sidebar">
+    <div class="p-3">
+        <h3 class="mb-3 border-bottom pb-2">Меню</h3>
+    </div>
+    <nav class="nav flex-column">
+        <a class="nav-link active" href="#">Главная</a>
+        <a class="nav-link" href="#">Категории</a>
+        <a class="nav-link" href="#">Заказы</a>
+        <a class="nav-link" href="#">Контакты</a>
+    </nav>
+<div class="stretch"></div>
+    <div class="btn-group dropup border-top rounded-0 w-100">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Пользователь
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Профиль</a></li>
+            <li><a class="dropdown-item" href="#">Выход</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main-content container p-4">
+    <h2 class="display-4 fw-semibold mt-4 text-center">Контакты</h2>
+    <div class="row justify-content-center custom-row-50">
+        <div class="col-md-5">
+            <div class="border mt-5 py-3 px-3 rounded-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputName1" class="form-label fw-semibold">Имя</label>
+                        <input type="text" class="form-control" id="exampleInputName1">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Почта</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="input-group-left-example">@</span>
+                            <input type="email" class="form-control" aria-describedby="input-group-left">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Сообщение</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="floatingTextarea" style="height: 60px"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>  <!--кнопка отправки формы-->
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="border-0 mt-5 py-3 px-3">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Наши контакты</h4>
+                    <p class="card-text mt-2">“I go through all the articles in the bulk download, save the ones that
+                        are clearly going to be useful and discard the remainder. This saves loads of time but also
+                        points me in directions I might not otherwise have thought of looking.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
