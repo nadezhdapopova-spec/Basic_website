@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "Basic_website"
 version = "0.1.0"
-description = "Study project for creating simple web application"
+description = "A minimal HTTP server in Python, implemented using the standard http.server module"
 authors = [
     "Nadezhda_Popova <nadezhdapopova13@yandex.ru>"
 ]
